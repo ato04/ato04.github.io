@@ -1,0 +1,5 @@
+plugins:
+  - jekyll
+  - jekyll-paginate
+  - jekyll-sitemap
+  - ruby

@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow:
+
+Sitemap: https://ato04.github.io/sitemap.xml
