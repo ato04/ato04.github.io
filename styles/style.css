@@ -10,7 +10,7 @@ a:link,a:visited,a:hover,a:active{text-decoration:none;}
 .cnpX,.cnpM {position:absolute;z-index:2;top:9vh;bottom:0;right:10%;margin:auto;width:80vmin;height:calc(100vmin/3*2);display:grid;grid-template-columns:repeat(18,1fr);grid-template-rows:repeat(5,1fr);grid-column-gap:0;grid-row-gap:0;transform:skewX(-10deg);}
 .cnpL {font-size:5vmin;padding:0 3vmin;-webkit-text-stroke:0.6vmin #F9FAFC;}
 .cnpS {font-size:2.5vmin;padding:0 1.5vmin;-webkit-text-stroke:0.3vmin #F9FAFC;}
-.cnpS.cnp6 {line-height:1;padding-top:1vmin;}
+.cnpS.cnp6 {line-height:1;padding-top:1.3vmin;}
 .cnp0 {grid-area:1/1/3/10;}
 .cnp1 {grid-area:1/10/3/19;}
 .cnp2 {grid-area:3/1/4/7;}
