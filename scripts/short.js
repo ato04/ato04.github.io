@@ -4,7 +4,11 @@ const range = new URL(window.location.href).searchParams.get('r');
 async function redirect() {
     var responses = await fetch(`https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/URL!${range}?key=${apiKey}`);
     responses = (await responses.json()).values;
-    document.querySelector("a").setAttribute('href',responses[0] || "/");
-    window.location = responses[0] || "https://ato04.github.io";
+    if (responses.length === 0) {
+        window.location.href = "/";
+    } else {
+        document.querySelector("a").setAttribute("href",responses[0]);
+        window.location.href = responses[0];
+    };
 };
 redirect();
