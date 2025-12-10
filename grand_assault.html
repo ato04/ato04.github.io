@@ -12,9 +12,11 @@
         <meta name="theme-color" content="#44AEF3">
     </head>
     <body>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <main>
             <header><a class="back" onclick="history.back()">←</a><a class="title" href="">大決戦</a></header><div class="head"></div>
             <iframe class="main" src="https://www.google.com/maps/d/embed?mid=1bTaQsxvRZpVqrc412KLjrv5xzp8ID2Q&ehbc=44AEF3&noprof=1" width="100%" height="100%"></iframe>
         </main>
+        <script>$('iframe').contents().find('#map-canvas div:nth-child(2)').css('display','none');</script>
     </body>
 </html>
