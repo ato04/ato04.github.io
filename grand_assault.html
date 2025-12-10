@@ -17,6 +17,6 @@
             <header><a class="back" onclick="history.back()">←</a><a class="title" href="">大決戦</a></header><div class="head"></div>
             <iframe class="main" src="https://www.google.com/maps/d/embed?mid=1bTaQsxvRZpVqrc412KLjrv5xzp8ID2Q&ehbc=44AEF3&noprof=1" width="100%" height="100%"></iframe>
         </main>
-        <script>window.setInterval(function(){$('iframe').contents().find('#map-canvas div:nth-child(2)').css('display','none');},500);</script>
+        <script>window.setInterval(function(){$('iframe').contents().find('#map-canvas div:nth-child(2)').css('display','none');console.log($('iframe').contents().find('#map-canvas div:nth-child(2)'));},1000);</script>
     </body>
 </html>
