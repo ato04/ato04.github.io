@@ -5,7 +5,7 @@ pre>div:not(:has(table)) {background:linear-gradient(-45deg,transparent 1em,#322
 pre>div:not(:has(table))::before {background:linear-gradient(-45deg,transparent 1em,white 0) bottom right;content:"";position:absolute;z-index:-1;top:-2px;left:-2px;width:calc(100% + 4px);height:calc(100% + 4px);}
 pre :is(h1,h2,h3) {color:yellow;} pre h1 {font-size:3em;} pre h2 {font-size:2em;} pre h3 {font-size:1.5em;}
 pre span {color:yellow;font-weight:bold;font-size:1.25em;} pre b {color:lightpink;font-weight:normal;}
-a:link,a:visited,a:hover,a:active {color:lightpink;margin:0 0.1em;}
-a::before {background:center/cover url(/assets/image/cthulhu/icon_tag-blue.svg);content:"";margin:0 0.1em -0.1em 0;width:0.8em;height:0.8em;}
+pre a {color:lightpink;} a:link,a:visited,a:hover,a:active {margin:0 0.1em;}
+pre a::before {background:center/cover url(/assets/image/cthulhu/icon_tag-pink.svg);content:"";margin:0 0.1em -0.1em 0;width:0.8em;height:0.8em;}
 .new {position:relative;} .new::after {content:url(/assets/image/new_flag.svg);position:absolute;top:0;left:0;width:3rem;height:3rem;}
 [ruby] {position:relative;} [ruby]::before {position:absolute;content:attr(ruby);white-space:nowrap;text-align:center;top:-100%;left:-25%;font-size:0.25em;width:150%;}
