@@ -1,9 +1,10 @@
 html,body {scroll-behavior:smooth;overflow-x:hidden;overflow-y:auto;}
-main {background-color:#050949;background-image:linear-gradient(90deg,#322E7B 1px,transparent 1px),linear-gradient(#322E7B 1px,transparent 1px);background-position:5em 5em;background-size:7em 7em;}
-pre {color:white;display:inline-block;text-wrap:wrap;line-height:2;width:auto;margin:2em;padding-top:9vh;font-family:sans-serif;}
+pre {color:white;display:inline-block;text-wrap:wrap;line-height:2;width:auto;margin:2em;padding-top:9vh;}
+pre::before {background-color:#050949;background-image:linear-gradient(90deg,#322E7B 1px,transparent 1px),linear-gradient(#322E7B 1px,transparent 1px);background-position:5em 5em;background-size:7em 7em;margin:-2em;}
 pre>div {overflow-x:auto;-webkit-overflow-scrolling:touch;-ms-overflow-style:none;scrollbar-width:none;} div::-webkit-scrollbar {display:none;}
 pre>div:not(:has(table)) {background:linear-gradient(-45deg,transparent 1em,#322E7B 0) bottom right;position:relative;margin:0;padding:1em;width:calc(100vw - 6em);}
-pre>div:not(:has(table))::after {background:linear-gradient(-45deg,transparent 1em,white 0) bottom right;content:'';position:absolute;z-index:-1;top:-2px;left:-2px;width:calc(100% + 4px);height:calc(100% + 4px);}
-pre :is(h1,h2,h3) {color:yellow;} pre h1 {font-size:5em;} pre h2 {font-size:3em;} pre h3 {font-size:2em;}
-pre span {color:yellow;font-weight:bold;font-size:1.5em;} pre b {color:lightpink;font-weight:normal;}
+pre>div:not(:has(table))::before {background:linear-gradient(-45deg,transparent 1em,white 0) bottom right;content:'';position:absolute;z-index:-1;top:-2px;left:-2px;width:calc(100% + 4px);height:calc(100% + 4px);}
+pre :is(h1,h2,h3) {color:yellow;} pre h1 {font-size:3em;} pre h2 {font-size:2em;} pre h3 {font-size:1.5em;}
+pre span {color:yellow;font-weight:bold;font-size:1.25em;} pre b {color:lightpink;font-weight:normal;}
+.new {overflow:hidden;position:relative;} .new::after {content:url(/assets/image/new_flag.svg);position:absolute;top:0;left:0;width:3rem;height:3rem;}
 [ruby] {position:relative;} [ruby]::before {position:absolute;content:attr(ruby);white-space:nowrap;text-align:center;top:-100%;left:-25%;font-size:0.5em;width:150%;}
