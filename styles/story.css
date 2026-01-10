@@ -1,5 +1,5 @@
-html,body {background-color:#050949;background-image:linear-gradient(90deg,#322E7B 1px,transparent 1px),linear-gradient(#322E7B 1px,transparent 1px);background-position:5em 5em;background-size:7em 7em;overflow-y:auto;}
-pre {color:white;display:inline-block;text-wrap:wrap;line-height:2;position:relative;width:100%;margin:3em;}
+html,body {background-color:#050949;background-image:linear-gradient(90deg,#322E7B 1px,transparent 1px),linear-gradient(#322E7B 1px,transparent 1px);background-position:5em 5em;background-size:7em 7em;scroll-padding-top:calc(9vh + 3em);overflow-y:auto;}
+main {height:max-content;} pre {color:white;display:inline-block;text-wrap:wrap;line-height:2;position:relative;width:100%;margin:3em;}
 pre>div {overflow-y:hidden;-webkit-overflow-scrolling:touch;-ms-overflow-style:none;scrollbar-width:none;} pre>div::-webkit-scrollbar {display:none;}
 pre>div:has(table) {overflow-x:auto;} pre>div:not(:has(table)) {background:linear-gradient(-45deg,transparent 1em,#322E7B 0) bottom right;position:relative;margin:0;padding:1.5em;width:calc(100% - 9em);}
 pre>div:not(:has(table))::before {background:linear-gradient(-45deg,transparent 1em,white 0) bottom right;content:"";position:absolute;z-index:-1;top:-2px;left:-2px;width:calc(100% + 4px);height:calc(100% + 4px);}
