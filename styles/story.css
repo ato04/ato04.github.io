@@ -2,7 +2,7 @@ html,body {background:repeating-linear-gradient(to bottom,transparent,transparen
 main {height:max-content;} pre {color:white;display:inline-block;text-wrap:wrap;line-height:2;position:relative;margin:3em;font-family:ShinMaruGo;}
 pre>div {overflow-y:hidden;-webkit-overflow-scrolling:touch;-ms-overflow-style:none;scrollbar-width:none;} pre>div::-webkit-scrollbar {display:none;} pre>div:has(table) {overflow-x:auto;}
 pre>div:not(:has(table)) {background:#322E7B;border:2px solid white;border-bottom-right-radius:1.5em;corner-bottom-right-shape:bevel;margin:0;padding:1.5em;}
-pre :is(h1,h2,h3,b,th) {font-weight:normal;} pre :is(h1,h2,h3,span) {color:yellow;} pre h1 {font-size:3em;} pre h2 {font-size:2em;} pre h3 {font-size:1.5em;} pre span {font-size:1.25em;}
+pre :is(h1,h2,h3,span) {color:yellow;} pre :is(h1,h2,h3,b,th) {font-weight:normal;} pre h1 {font-size:3em;} pre h2 {font-size:2em;} pre h3 {font-size:1.5em;} pre span {font-size:1.25em;}
 pre :is(a,b) {color:lightpink;} pre a::before {background:center/cover url(/assets/image/icon_tag-pink.svg);display:inline-block;content:"";margin:0 0.1em;width:0.8em;height:0.8em;}
 table {border-collapse:separate;border-spacing:0.5em;text-align:center;width:100%;}
 tr,th,td {border:2px solid white;border-radius:1.25em;white-space:pre;padding:0.1em 1.5em;}
