@@ -9,4 +9,7 @@ tr,th,td {border:2px solid white;border-radius:1.25em;white-space:pre;padding:0.
 tr>*:first-child {text-align:left;} th {background:#322E7B;} td {background:#050949;}
 .new {position:relative;} .new::after {content:url(/assets/image/new_flag.svg);position:absolute;top:0;left:0;width:3rem;height:3rem;}
 [ruby] {position:relative;} [ruby]::before {position:absolute;content:attr(ruby);white-space:nowrap;text-align:center;top:-100%;left:-25%;font-size:0.25em;width:150%;}
+details>summary>div:first-of-type,details[open]>summary>div:last-of-type {display:inline;}
+details[open]>summary>div:first-of-type,details>summary>div:last-of-type {display:none;}
+summary {display:block;} summary::-webkit-details-marker {display:none;}
 @media (max-aspect-ratio:4/3) or (max-width:1200px) {pre>div:has(table) {display:none;}}
