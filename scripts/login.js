@@ -1,10 +1,11 @@
 const version = "β";
-const password = "Atokas69";
-const latest = {"ver":version,"uuid":crypto.randomUUID()};
+const latest = {"ver":version,"uuid":crypto.randomUUID(),"lock":0};
+const passkey = "Atokas69";
 function autoStorage(value) {localStorage.setItem("local",JSON.stringify(value));};
 if (!localStorage.hasOwnProperty("local")) {autoStorage(latest);};
 var local = JSON.parse(localStorage.getItem("local"));
 if (!local.ver||local.ver!=version) {local=Object.assign(latest,local);local.ver=version;};
-while (!local.pass!=password) {local.pass=window.prompt("パスワード");}
+while (local.pass!=passkey||local.lock<3) {local.pass=window.prompt("パスワード");local.lock+=1;};
+if (local.pass==passkey) {local.lock=0;} else {autoStorage(local);window.close();};
 while (!local.name||local.name.length>32) {local.name=window.prompt("ユーザー名");};
 autoStorage(local);
